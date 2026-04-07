@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CashRewards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- OVERLAY -->
+<div id="overlay">
+  <h2>EARN WITH CONFIDENCE</h2>
+  <button onclick="joinTelegram()">Join Telegram</button>
+  <button onclick="closeOverlay()">Enter</button>
+</div>
+
+<!-- APP -->
+<div id="app" class="blur">
+
+  <div class="header">
+    <h2>CashRewards</h2>
+  </div>
+
+  <div class="card balance-card">
+    <p>Total Balance</p>
+    <h1>₦<span id="balance">0</span></h1>
+  </div>
+
+  <button class="claim-btn" onclick="claimReward()">
+    🎁 Claim Daily Reward
+  </button>
+
+  <div class="card">
+    <h3>Transaction History</h3>
+    <ul id="history"></ul>
+  </div>
+
+  <div class="nav">
+    <button onclick="logout()">🚪 Logout</button>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
